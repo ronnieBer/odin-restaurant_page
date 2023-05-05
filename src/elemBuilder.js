@@ -60,6 +60,15 @@ function createTextareaElem(textareaId, textareaName, placeholderText, className
     return textareaElem;
 }
 
+function createLabelElem(inputId, labelClass) {
+    const labelElem = createElem('label');
+
+    labelElem.classList.add(labelClass);
+    labelElem.setAttribute('for', inputId);
+
+    return labelElem;
+}
+
 export { 
     createElem,
     createImgElem,
@@ -67,5 +76,6 @@ export {
     createSpanElem,
     createBtnElem,
     createInputElem,
-    createTextareaElem
+    createTextareaElem,
+    createLabelElem
 }
