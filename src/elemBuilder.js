@@ -49,11 +49,23 @@ function createInputElem(inputType, inputId, inputName, inputPlaceholder, classN
     return inputElem;
 }
 
+function createTextareaElem(textareaId, textareaName, placeholderText, className) {
+    const textareaElem = createElem('textarea');
+
+    textareaElem.classList.add(className);
+    textareaElem.setAttribute('id', textareaId);
+    textareaElem.setAttribute('name', textareaName);
+    textareaElem.setAttribute('placeholder', placeholderText);
+
+    return textareaElem;
+}
+
 export { 
     createElem,
     createImgElem,
     createTextElem,
     createSpanElem,
     createBtnElem,
-    createInputElem
+    createInputElem,
+    createTextareaElem
 }
