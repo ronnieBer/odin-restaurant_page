@@ -37,10 +37,23 @@ function createBtnElem(text, className) {
     return btnElem;
 }
 
+function createInputElem(inputType, inputId, inputName, inputPlaceholder, className) {
+    const inputElem = createElem('input');
+
+    inputElem.classList.add(className);
+    inputElem.setAttribute('type', inputType);
+    inputElem.setAttribute('id', inputId);
+    inputElem.setAttribute('name', inputName);
+    inputElem.setAttribute('placeholder', inputPlaceholder);
+
+    return inputElem;
+}
+
 export { 
     createElem,
     createImgElem,
     createTextElem,
     createSpanElem,
-    createBtnElem
+    createBtnElem,
+    createInputElem
 }
