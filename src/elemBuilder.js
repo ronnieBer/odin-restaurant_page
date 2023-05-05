@@ -20,8 +20,17 @@ function createTextElem(text, nameTag, className) {
     return textElem;
 }
 
+function createSpanElem(text) {
+    const spanElem = createElem('span')
+
+    spanElem.textContent = text;
+
+    return spanElem;
+}
+
 export { 
     createElem,
     createImgElem,
-    createTextElem
+    createTextElem,
+    createSpanElem
 }
