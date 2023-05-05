@@ -28,9 +28,19 @@ function createSpanElem(text) {
     return spanElem;
 }
 
+function createBtnElem(text, className) {
+    const btnElem = createElem('button');
+
+    btnElem.classList.add(className);
+    btnElem.textContent = text;
+
+    return btnElem;
+}
+
 export { 
     createElem,
     createImgElem,
     createTextElem,
-    createSpanElem
+    createSpanElem,
+    createBtnElem
 }
