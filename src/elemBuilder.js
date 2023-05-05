@@ -11,7 +11,17 @@ function createImgElem(fileName, altName) {
     return imgElem;
 }
 
+function createTextElem(text, nameTag, className) {
+    const textElem = createElem(nameTag);
+
+    textElem.classList.add(className);
+    textElem.textContent = text;
+
+    return textElem;
+}
+
 export { 
     createElem,
-    createImgElem
+    createImgElem,
+    createTextElem
 }
