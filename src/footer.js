@@ -7,7 +7,11 @@ function createCopyrightTxt() {
 }
 
 function loadFooter() {
-    console.log('Footer');
+    const footer = document.querySelector('footer');
+
+    footer.appendChild(createCopyrightTxt());
+
+    return footer;
 }
 
 export default loadFooter;
