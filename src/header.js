@@ -1,4 +1,4 @@
-import { createElem } from "./elemBuilder";
+import { createElem, createImgElem } from "./elemBuilder";
 
 function loadHeader() {
     console.log('Header')
