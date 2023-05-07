@@ -19,6 +19,15 @@ function createMenuBtn() {
     return unorderedList;
 }
 
+function createNavMenu() {
+    const navMenu = createElem('div');
+
+    navMenu.classList.add('nav_bar-menu');
+    navMenu.appendChild(createMenuBtn());
+
+    return navMenu;
+}
+
 function loadHeader() {
     console.log('Header')
 }
