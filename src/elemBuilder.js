@@ -28,6 +28,16 @@ function createSpanElem(text) {
     return spanElem;
 }
 
+function createAnchor(text, hrefValue, childName) {
+    const anchor = document.createElement('a');
+
+    anchor.textContent = text;
+    anchor.setAttribute('href', hrefValue);
+    anchor.appendChild(childName);
+
+    return anchor;
+}
+
 function createBtnElem(text, className) {
     const btnElem = createElem('button');
 
@@ -74,6 +84,7 @@ export {
     createImgElem,
     createTextElem,
     createSpanElem,
+    createAnchor,
     createBtnElem,
     createInputElem,
     createTextareaElem,
