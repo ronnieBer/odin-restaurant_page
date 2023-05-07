@@ -29,7 +29,7 @@ function createSpanElem(text) {
     return spanElem;
 }
 
-function createAnchor(text, hrefValue, childName) {
+function createAnchorElem(text, hrefValue, childName) {
     const anchor = document.createElement('a');
 
     anchor.textContent = text;
@@ -85,7 +85,7 @@ export {
     createImgElem,
     createTextElem,
     createSpanElem,
-    createAnchor,
+    createAnchorElem,
     createBtnElem,
     createInputElem,
     createTextareaElem,
