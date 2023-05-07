@@ -19,6 +19,15 @@ function createMenuBtn() {
     return unorderedList;
 }
 
+function createNavMenu() {
+    const navMenu = createElem('div');
+    
+    navMenu.classList.add('nav_bar-menu');
+    navMenu.appendChild(createMenuBtn());
+    
+    return navMenu;
+}
+
 function createNav() {
     const nav = createElem('nav');
 
@@ -36,15 +45,6 @@ function createNav() {
     nav.appendChild(createNavMenu());
 
     return nav;
-}
-
-function createNavMenu() {
-    const navMenu = createElem('div');
-
-    navMenu.classList.add('nav_bar-menu');
-    navMenu.appendChild(createMenuBtn());
-
-    return navMenu;
 }
 
 function loadHeader() {
