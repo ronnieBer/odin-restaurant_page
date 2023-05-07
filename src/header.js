@@ -19,6 +19,25 @@ function createMenuBtn() {
     return unorderedList;
 }
 
+function createNav() {
+    const nav = createElem('nav');
+
+    nav.classList.add('navbar');
+    nav.appendChild(
+        createAnchorElem(
+            '', 
+            'index.html', 
+            createImgElem(
+                'Odin_Sweets.png', 
+                'Odin Sweets logo', 
+                'odin_sweets-logo')
+            )
+        );
+    nav.appendChild(createNavMenu());
+
+    return nav;
+}
+
 function createNavMenu() {
     const navMenu = createElem('div');
 
