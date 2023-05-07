@@ -2,9 +2,10 @@ function createElem(elem) {
     return document.createElement(elem);
 }
 
-function createImgElem(fileName, altName) {
+function createImgElem(fileName, altName, className) {
     const imgElem = createElem('img');
 
+    imgElem.classList.add(className)
     imgElem.src = `images/${fileName}`;
     imgElem.alt = altName;
 
