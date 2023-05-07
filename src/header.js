@@ -48,7 +48,11 @@ function createNavMenu() {
 }
 
 function loadHeader() {
-    console.log('Header')
+    const header = document.querySelector('header');
+
+    header.appendChild(createNav());
+
+    return header;
 }
 
 export default loadHeader;
