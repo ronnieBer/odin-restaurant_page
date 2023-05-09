@@ -8,6 +8,16 @@ function createHeading() {
     return headingOne;
 }
 
+function createHome() {
+    const home = createElem('div');
+    
+    home.classList.add('hero');
+    home.appendChild(createHomeContent());
+    home.appendChild(createOverlay());
+    
+    return home;
+}
+
 function createHomeContent() {
     const homeContent = createElem('div');
 
@@ -16,16 +26,6 @@ function createHomeContent() {
     homeContent.appendChild(createBtnElem('VIEW MENU', 'view-menu'));
 
     return homeContent;
-}
-
-function createHome() {
-    const home = createElem('div');
-
-    home.classList.add('hero');
-    home.appendChild(createHomeContent());
-    home.appendChild(createOverlay());
-
-    return home;
 }
 
 function createOverlay() {
