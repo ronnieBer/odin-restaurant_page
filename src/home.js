@@ -37,7 +37,12 @@ function createOverlay() {
 }
 
 function loadHome() {
-    console.log('Home');
+    const main = document.querySelector('.main-content');
+
+    main.textContent = '';
+    main.appendChild(createHome());
+
+    return main;
 }
 
 export default loadHome;
