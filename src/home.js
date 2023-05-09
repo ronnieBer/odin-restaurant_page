@@ -9,7 +9,7 @@ function createHeading() {
 }
 
 function createHomeContent() {
-    const homeContent = document.createElement('div');
+    const homeContent = createElem('div');
 
     homeContent.classList.add('hero-content');
     homeContent.appendChild(createHeading());
