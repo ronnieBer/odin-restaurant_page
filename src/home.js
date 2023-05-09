@@ -1,4 +1,4 @@
-import { createElem, createTextElem, createSpanElem } from "./elemBuilder";
+import { createElem, createTextElem, createSpanElem, createBtnElem } from "./elemBuilder";
 
 function loadHome() {
     console.log('Home');
