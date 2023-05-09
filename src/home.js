@@ -18,6 +18,16 @@ function createHomeContent() {
     return homeContent;
 }
 
+function createHome() {
+    const home = createElem('div');
+
+    home.classList.add('hero');
+    home.appendChild(createHomeContent());
+    home.appendChild(createOverlay());
+
+    return home;
+}
+
 function createOverlay() {
     const overlay = createElem('div');
 
