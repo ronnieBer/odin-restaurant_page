@@ -18,6 +18,14 @@ function createHomeContent() {
     return homeContent;
 }
 
+function createOverlay() {
+    const overlay = createElem('div');
+
+    overlay.classList.add('overlay');
+
+    return overlay;
+}
+
 function loadHome() {
     console.log('Home');
 }
