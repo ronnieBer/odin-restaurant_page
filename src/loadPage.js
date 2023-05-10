@@ -10,7 +10,7 @@ function createHeader() {
 }
 
 function createMain() {
-    const main = createElem('main')
+    const main = createElem('main');
     
     main.classList.add('main-content');
 
