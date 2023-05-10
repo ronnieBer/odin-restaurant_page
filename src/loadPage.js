@@ -9,6 +9,14 @@ function createHeader() {
     return header;
 }
 
+function createMain() {
+    const main = createElem('main')
+    
+    main.classList.add('main-content');
+
+    return main;
+}
+
 function initializedPage() {
     console.log('Hello World');
 }
