@@ -23,6 +23,18 @@ function createFooter() {
     return footer;
 }
 
+function setActiveNavBtn(button) {
+    const navBtn = document.querySelectorAll('.nav-btn');
+
+    navBtn.forEach((button) => {
+        if(button !== this) {
+            button.classList.remove('active');
+        }
+    });
+
+    button.classList.add('active');
+}
+
 function initializedPage() {
     const content = document.getElementById('content');
 
