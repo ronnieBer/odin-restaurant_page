@@ -35,6 +35,34 @@ function setActiveNavBtn(button) {
     button.classList.add('active');
 }
 
+function initializedNavBtn() {
+    const homeBtn = document.querySelector('.home');
+    const menuBtn = document.querySelector('.menu');
+    const contactBtn = document.querySelector('.contact');
+    const viewMenuBtn = document.querySelector('.view-menu');
+
+    homeBtn.addEventListener("click", (e) => {
+        if (e.target.classList.contains("active")) return;
+        setActiveNavBtn(homeBtn);
+        loadHome();
+    });
+
+    menuBtn.addEventListener("click", (e) => {
+        if (e.target.classList.contains("active")) return;
+        setActiveNavBtn(menuBtn);
+    });
+
+    contactBtn.addEventListener("click", (e) => {
+        if (e.target.classList.contains("active")) return;
+        setActiveNavBtn(contactBtn);
+    });
+
+    viewMenuBtn.addEventListener("click", (e) => {
+        if (e.target.classList.contains("active")) return;
+        setActiveNavBtn(menuBtn);
+    });
+}
+
 function initializedPage() {
     const content = document.getElementById('content');
 
