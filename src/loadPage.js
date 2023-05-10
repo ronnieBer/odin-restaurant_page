@@ -74,6 +74,9 @@ function initializedPage() {
     loadHome();
     loadFooter();
 
+    initializedNavBtn();
+    setActiveNavBtn(document.querySelector('.nav-btn'));
+
     return content;
 }
 
