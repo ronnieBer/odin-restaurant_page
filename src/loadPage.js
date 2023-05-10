@@ -17,6 +17,12 @@ function createMain() {
     return main;
 }
 
+function createFooter() {
+    const footer = createElem('footer');
+
+    return footer;
+}
+
 function initializedPage() {
     console.log('Hello World');
 }
