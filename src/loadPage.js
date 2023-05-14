@@ -48,11 +48,13 @@ function initializedNavBtn() {
     });
 
     menuBtn.addEventListener("click", (e) => {
+        e.preventDefault();
         if (e.target.classList.contains("active")) return;
         setActiveNavBtn(menuBtn);
     });
 
     contactBtn.addEventListener("click", (e) => {
+        e.preventDefault();
         if (e.target.classList.contains("active")) return;
         setActiveNavBtn(contactBtn);
     });
