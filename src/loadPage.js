@@ -1,6 +1,7 @@
 import { createElem } from "./elemBuilder";
 import loadHeader from "./header";
 import loadHome from "./home";
+import loadMenu from "./menu";
 import loadFooter from "./footer";
 
 function createHeader() {
