@@ -20,6 +20,34 @@ function createMenuItem(fileUrl, itemName, itemPrice) {
     return menuItem;
 }
 
+function createMenu() {
+    const menu = createElem('div');
+    const menuContent = createElem('div');
+
+    menuContent.classList.add('menu-content');
+    // crossant items
+    menuContent.appendChild(createMenuItem('crossant/crossant01.jpg', 'NUTELLA CROSSANTS', 'PHP 900.00'));
+    menuContent.appendChild(createMenuItem('crossant/crossant02.jpg', 'PAIN AU CHOCOLAT CROSSANTS', 'PHP 1,100.00'));
+    menuContent.appendChild(createMenuItem('crossant/crossant03.jpg', 'RED VELVET CROSSANTS', 'PHP 900.00'));
+    // tart items
+    menuContent.appendChild(createMenuItem('tart/tart01.jpg', 'MANGOES  CALASSIC CORSSANT TARTS', 'PHP 1,200.00'));
+    menuContent.appendChild(createMenuItem('tart/tart02.jpg', 'STRAWBERRIES CLASSIC CROSSANT TARTS', 'PHP 1,400.00'));
+    menuContent.appendChild(createMenuItem('tart/tart03.jpg', 'MIXED BERRIES CLASSIC CROSSANT TARTS', 'PHP 2,600.00'));
+    // cake items
+    menuContent.appendChild(createMenuItem('cake/cake01.jpg', 'STRAWBERRY CHARLOTTE', 'PHP 2,500.00'));
+    menuContent.appendChild(createMenuItem('cake/cake02.jpg', 'MANGO CHEESECAKE', 'PHP 2,000.00'));
+    menuContent.appendChild(createMenuItem('cake/cake03.jpg', 'STRAWBERRY CHEESECAKE', 'PHP 2,300.00'));
+    menuContent.appendChild(createMenuItem('cake/cake04.jpg', 'TRIO MOUSSE', 'PHP 2,000.00'));
+    menuContent.appendChild(createMenuItem('cake/cake05.jpg', 'PEARL', 'PHP 1,350.00'));
+    menuContent.appendChild(createMenuItem('cake/cake06.jpg', 'CHOCOLATTA', 'PHP 1,500.00'));
+
+    menu.classList.add('our-menu');
+    menu.appendChild(createTextElem('Our Menu', 'h1', 'menu-heading'));
+    menu.appendChild(menuContent);
+
+    return menu;
+}
+
 function loadMenu() {
     console.log('Menu');
 }
