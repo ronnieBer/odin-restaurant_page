@@ -1,4 +1,4 @@
-import { createElem } from "./elemBuilder";
+import { createElem, createTextElem } from "./elemBuilder";
 
 function loadMenu() {
     console.log('Menu');
