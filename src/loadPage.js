@@ -53,17 +53,20 @@ function initializedNavBtn() {
         e.preventDefault();
         if (e.target.classList.contains("active")) return;
         setActiveNavBtn(menuBtn);
+        loadMenu();
     });
 
     contactBtn.addEventListener("click", (e) => {
         e.preventDefault();
         if (e.target.classList.contains("active")) return;
         setActiveNavBtn(contactBtn);
+        loadContact();
     });
 
     viewMenuBtn.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
         setActiveNavBtn(menuBtn);
+        loadMenu();
     });
 }
 
