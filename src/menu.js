@@ -49,7 +49,12 @@ function createMenu() {
 }
 
 function loadMenu() {
-    console.log('Menu');
+    const main = document.querySelector('.main-content');
+
+    main.textContent = '';
+    main.appendChild(createMenu());
+
+    return main;
 }
 
 export default loadMenu;
