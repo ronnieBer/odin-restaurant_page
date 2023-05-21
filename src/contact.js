@@ -1,4 +1,4 @@
-import { createElem, createImgElem } from "./elemBuilder";
+import { createElem, createImgElem, createTextElem } from "./elemBuilder";
 
 function loadContact() {
     console.log('Contact');
