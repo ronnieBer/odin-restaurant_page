@@ -54,7 +54,12 @@ function createContact() {
 }
 
 function loadContact() {
-    console.log('Contact');
+    const main = document.querySelector('.main-content');
+
+    main.textContent = '';
+    main.appendChild(createContact());
+
+    return main;
 }
 
 export default loadContact;
