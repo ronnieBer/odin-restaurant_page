@@ -14,7 +14,7 @@ In this fifth repository from The Odin Project Full Stack JavaScript curriculum 
 Building this Restaurant Page using the JavaScript ES6 module and webpack was fun and challenging.
 
 
-#### :point_right: Restaurant Page
+#### :point_right: Restaurant Page [Live Demo](https://ronnieber.github.io/odin-restaurant_page/)
 
 
 #### Image Credit
